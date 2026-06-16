@@ -1,45 +1,60 @@
-# React + TypeScript + Vite
+# Movie Search Engine React Typescript Swc
 
-![movie-search-engine](https://github.com/luissanchezdev/movie-search-engine-react-typescript-swc/assets/50006980/065fa0de-c50b-426b-93c4-60fb0200a02e)
+Movie Search Engine React Typescript Swc application.
 
+![Movie Search Engine React Typescript Swc overview](docs/assets/movie-search-engine-react-typescript-swc-overview.svg)
 
+## Stack
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- React
+- Vite/CRA
+- Node.js
+- TypeScript
 
-Currently, two official plugins are available:
+## What this repository contains
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This repository contains the source code and documentation for **movie-search-engine-react-typescript-swc**. The README was refreshed to make the project easier to understand, run and validate from GitHub.
 
-## Expanding the ESLint configuration
+## Project image
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+The image above represents the current project state. When a local browser runtime was available, it was captured from the running project; otherwise it is an honest architecture/overview image based on source inspection.
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
-
-
-## Add .env file:
-
-Get your api key in Ambd Api. Create .env file with this information:
+## Getting started
 
 ```bash
-API_KEY=yourApiKey
+git clone https://github.com/luisMakesIt/movie-search-engine-react-typescript-swc.git
+cd movie-search-engine-react-typescript-swc
 ```
 
+### Install dependencies
 
+```bash
+npm install
+```
+
+### Run locally
+
+```bash
+npm run dev
+```
+
+## Available scripts / commands
+
+| Command | Description |
+| --- | --- |
+| `dev` | `vite` |
+| `build` | `tsc && vite build` |
+| `lint` | `eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0` |
+| `preview` | `vite preview` |
+
+## Validation notes
+
+- npm install completed.
+- npm run build completed.
+- Chrome screenshot failed; using overview image.
+
+## Suggested next improvements
+
+- Add automated tests or CI if the project does not have them yet.
+- Keep environment-specific values out of version control.
+- Document any external services required to run the project locally.
